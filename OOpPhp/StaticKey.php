@@ -19,7 +19,7 @@
 
 class Iphone {
     public static $name = 'Mohamed';
-    public static $ram = '2GB';
+    public static $age = '20';
 
     public static function sayHello() {
         return 'Hello';
