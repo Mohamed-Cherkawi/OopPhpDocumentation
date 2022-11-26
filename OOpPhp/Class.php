@@ -55,5 +55,5 @@ $device -> cameraPixels = 100;
 $device -> storageSize = 500;
 $device -> batteryLife = 5000;
 
-
 echo $device -> getPhoneInfos();
+echo $device -> test;
