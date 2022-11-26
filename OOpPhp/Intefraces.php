@@ -1,5 +1,9 @@
 <?php
+/*
+   - Interfaces allow you to specify what methods a class should implement.
+   - if the User class does not implement these methods it gives us an Error . 
 
+*/
 interface UserInterface
 {
     public function add();
@@ -8,7 +12,7 @@ interface UserInterface
     public function get();
 
 }
-// if the User class does not implement these methods it gives us an Error .
+
 class User implements UserInterface {
     public function getUserRole(){
         echo 'this user has a user role' ;
@@ -27,3 +31,10 @@ class User implements UserInterface {
         echo 'Deleting user';
     }
 }
+
+/*
+Interfaces cannot have properties, while abstract classes can
+All interface methods must be public, while abstract class methods is public or protected
+All methods in an interface are abstract, so they cannot be implemented in code and the abstract keyword is not necessary
+Classes can implement an interface while inheriting from another class at the same time
+*/

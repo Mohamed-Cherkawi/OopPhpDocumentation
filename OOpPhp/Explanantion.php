@@ -27,12 +27,4 @@
     -Refer to Current Object
     - Access Non Static Memebrs.
     -Use ( $ ) Because it Represent a variable .
-
-
-
-
-    Blog System :
-    -Class    = Code To Add New Post , Article , NEws , informations
-    -Object   = Post , Article , NEws , informations
-    -Application = Blog System
     */
