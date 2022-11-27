@@ -68,15 +68,14 @@ class Ipad  extends MakeDevice{
 // Iphone 
 $Iphone = new Iphone();
 $Iphone->setOwner("Mohamed");
-echo "<br>";
 $Iphone->sayHello();
+echo "\n";
 
 
 // Ipad 
 $Ipad = new Ipad();
 $Ipad->setOwner("Aziz");
-echo "<br>";
-$Iphone->sayHello();
+$Ipad->sayHello();
 
 /*
 So, when a child class is inherited from an abstract class, we have the following rules:

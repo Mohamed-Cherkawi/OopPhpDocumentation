@@ -39,9 +39,12 @@ class Phone {
     }
     
     public function getPhoneInfos(){
-        return " type :" . $this->type . '<br>' ." model :" . $this->model . '<br>' ." color :" . $this->color . '<br>' 
-        . " cameraPixels :" . $this->cameraPixels . '<br>' . " storageSize :" . $this->storageSize . '<br>'
-        . " batteryLife :" . $this->batteryLife . '<br>';
+        return " type :" . $this->type . "\n"
+            ." model :" . $this->model . "\n"
+            ." color :" . $this->color . "\n"
+            . " cameraPixels :" . $this->cameraPixels . "\n"
+            . " storageSize :" . $this->storageSize . "\n"
+        . " batteryLife :" . $this->batteryLife ;
     }
     
 }
@@ -57,4 +60,3 @@ $device -> storageSize = 500;
 $device -> batteryLife = 5000;
 
 echo $device -> getPhoneInfos();
-echo $device -> test;

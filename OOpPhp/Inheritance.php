@@ -47,7 +47,7 @@ class Animal {
 $anonymousAnimal = new Animal("Aigle","Birds","brown","male", 1 , 2);
 echo "Hi im an " . $anonymousAnimal -> getName() . " and i love to " . $anonymousAnimal -> eat() . " and to " . $anonymousAnimal -> sleep();
 
-echo "\n";
+echo "\n \n";
 
 class Dog extends Animal {
     
@@ -57,9 +57,9 @@ class Dog extends Animal {
         return "WooooF";
     }
 
-    public function guard():void{
-        echo "Hi My Name is " . $this -> getName() . " and i Help Humans By guarding Their house" . "<br>";
-        echo "I Scare thieves by making this sound : " . $this -> makeSound();
+    public function guard():string{
+        return "Hi My Name is " . $this -> getName() . " and i Help Humans By guarding Their house" . "\n"
+        . "I Scare thieves by making this sound : " . $this -> makeSound();
     }
 
 }

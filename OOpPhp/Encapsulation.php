@@ -91,7 +91,10 @@ $device -> storageSize = 1000;
 $device -> batteryLife = 5000;
 
 echo $device -> getStorageSize();
- echo "<br>";
+
+echo "\n";
+
 $device -> setStorageSize(500);
+
 echo $device -> getStorageSize();
 

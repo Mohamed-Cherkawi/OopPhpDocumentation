@@ -29,8 +29,7 @@ class Admin extends User {
 $admin = new Admin();
 echo $admin->getUserRole();
 
-echo "<br>";
-echo "<br>";
+echo "\n \n";
 /*********************  Overloading ********************/
 /* 
 Function overloading contains same function name and that function performs different 
@@ -66,7 +65,6 @@ $s = new shape;
 // Function call
 echo($s->calculateArea(2));
 
-echo "<br>";
-
+echo "\n";
 // calling area method for rectangle
 echo ($s->calculateArea(4, 2));
