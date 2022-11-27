@@ -3,14 +3,14 @@
 
 
 class Phone {
-    private string $type;
-    private string $model;
-    private string $color;
-    private string $cameraPixels; // mega Pixels
-    private int $storageSize; // gigaOctect
-    private int $batteryLife;
-
-    /*public function __construct($type,$model,$color,$cameraPixels,$storageSize,$batteryLife){
+    public String $type;
+    public String $model;
+    public String $color;
+    public String $cameraPixels; // mega Pixels
+    public int $storageSize; // gigaOctect
+    public int $batteryLife;
+/*
+    public function __construct($type,$model,$color,$cameraPixels,$storageSize,$batteryLife){
         $this->type = $type;
         $this->model = $model;
         $this->color = $color;
@@ -18,8 +18,8 @@ class Phone {
         $this->storageSize = $storageSize;
         $this->batteryLife = $batteryLife;
 
-    }
-    */
+    }*/
+    
 
     public function setType(string $type) :void
     {
@@ -82,12 +82,16 @@ class Phone {
     }
 }
 
-$device = new Phone();
-$device -> setType("iphone");
-$device -> setmodel("11 pro");
-$device -> setColor("red");
-$device -> setCameraPixels(330);
-$device -> setStorageSize(1000);
-$device -> setBatteryLife(5000);
+$device = new Phone(/*"iphone","11 pro" , "red" , 330,1000,5000*/);
+$device -> type = "iphone";
+$device -> model = "11 pro";
+$device -> color = "red";
+$device -> cameraPixels = 330;
+$device -> storageSize = 1000;
+$device -> batteryLife = 5000;
 
 echo $device -> getStorageSize();
+ echo "<br>";
+$device -> setStorageSize(500);
+echo $device -> getStorageSize();
+

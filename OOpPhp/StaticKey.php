@@ -22,12 +22,12 @@ class Iphone {
     public static $age = '20';
 
     public static function sayHello() {
-        return 'Hello';
+        return 'Hello ' . self::$name ;
     }
 }
 
 echo Iphone::$name;
- $phone = new Iphone();
+ echo "<br>";
 // // echo $phone->name;  Error
-// echo $phone->sayHello();//Outputs : Hello
+ echo Iphone::sayHello();//Outputs : Hello
 
