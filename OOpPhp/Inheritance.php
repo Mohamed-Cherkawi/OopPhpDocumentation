@@ -43,11 +43,11 @@ class Animal {
         return $this -> name;
     }
 }
-echo "<pre>";
+
 $anonymousAnimal = new Animal("Aigle","Birds","brown","male", 1 , 2);
 echo "Hi im an " . $anonymousAnimal -> getName() . " and i love to " . $anonymousAnimal -> eat() . " and to " . $anonymousAnimal -> sleep();
-echo "</pre>";
 
+echo "\n";
 
 class Dog extends Animal {
     
@@ -64,8 +64,5 @@ class Dog extends Animal {
 
 }
 
-echo "<pre>";
 $dog = new Dog("Boobizz","dogs","white","female", 3 , 4);
-echo "<br>";
 echo $dog -> guard();
-echo "</pre>";

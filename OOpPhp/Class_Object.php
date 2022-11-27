@@ -18,9 +18,10 @@ class Phone {
     public int $batteryLife;
 
     // constructor
-    public function __construct(){
-
+    public function __construct()
+    {
     }
+
     public function turnOn() {
         echo "Hi i just turned on :) " ;
         date_default_timezone_set('Africa/Casablanca');

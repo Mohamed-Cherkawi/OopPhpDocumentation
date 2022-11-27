@@ -21,8 +21,8 @@ abstract class MakeDevice {
     abstract public function verifyOwner();
     abstract public function sayWelcome($n);
 
-    public function Maher(){
-        echo "Maher" ;
+    public function optionalMethod(){
+        echo "im useless :)" ;
     }
 }
 
@@ -68,14 +68,11 @@ class Ipad  extends MakeDevice{
 // Iphone 
 $Iphone = new Iphone();
 $Iphone->sayWelcome("Mohamed");
-echo '<pre>';
+echo "\n";
 print_r($Iphone);
-echo '</pre>';
 
 // Ipad 
 $Ipad = new Ipad();
 $Ipad->sayWelcome("Salima");
-echo '<pre>';
+echo "\n";
 print_r($Ipad);
-echo '</pre>';
-

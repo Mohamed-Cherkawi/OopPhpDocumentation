@@ -3,10 +3,10 @@
 
 
 class Phone {
-    private String $type;
-    private String $model;
-    private String $color;
-    private String $cameraPixels; // mega Pixels
+    private string $type;
+    private string $model;
+    private string $color;
+    private string $cameraPixels; // mega Pixels
     private int $storageSize; // gigaOctect
     private int $batteryLife;
 
@@ -82,6 +82,12 @@ class Phone {
     }
 }
 
-$device = new Phone("iphone","11 pro" , "red" , 330,1000,5000);
+$device = new Phone();
+$device -> setType("iphone");
+$device -> setmodel("11 pro");
+$device -> setColor("red");
+$device -> setCameraPixels(330);
+$device -> setStorageSize(1000);
+$device -> setBatteryLife(5000);
 
 echo $device -> getStorageSize();

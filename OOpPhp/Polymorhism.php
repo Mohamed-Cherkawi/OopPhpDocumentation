@@ -5,17 +5,17 @@
 
 class User {
     public function getUserRole(){
-        echo 'this user has a user role' ;
+        return 'this user has a user role' ;
     }
 }
 
 class Admin extends User {
     public function getUserRole()
     {
-        echo 'This admin has admin role ' ;
+        return 'This admin has admin role ' ;
     }
 }
 
 // Overriding Function ;
 $admin = new Admin();
-$admin->getUserRole();
+echo $admin->getUserRole();
